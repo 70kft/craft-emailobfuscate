@@ -45,6 +45,11 @@ class EmailObfuscateTwigExtension extends \Twig_Extension
 	 */ 
 	public function emailObfuscate($string)
 	{
+
+		if (trim($string) == '') {
+			return;
+		}
+		
 		// Start the dom object
 		$dom = new DOMDocument();
 		$dom->recover = true;
