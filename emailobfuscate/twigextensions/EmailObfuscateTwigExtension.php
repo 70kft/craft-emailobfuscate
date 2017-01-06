@@ -56,7 +56,9 @@ class EmailObfuscateTwigExtension extends \Twig_Extension
 		$dom->substituteEntities = true;
 
 		// Feed the content to the dom object
+		libxml_use_internal_errors(true);
 		$dom->loadHTML($string);
+		libxml_use_internal_errors(false);
 
 		// Check each link
 		foreach ($dom->getElementsByTagName('a') as $anchor) {

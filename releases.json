@@ -13,4 +13,12 @@
         "# Fixed error on empty string",
         "[Fixed] Fixed error on empty string."
     ]
+}, {
+    "version": "1.2",
+    "downloadUrl": "https://github.com/70kft/craft-emailobfuscate/archive/v1.2.zip",
+    "date": "2012-01-06T23:00:00-06:00",
+    "notes": [
+        "# Fixed Issue #3",
+        "[Fixed] Fixed Error with libxml not parsing figure elements correctly."
+    ]
 }]
